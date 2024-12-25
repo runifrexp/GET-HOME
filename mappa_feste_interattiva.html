@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a15f5c14520b28e70711802b702cf979 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a15f5c14520b28e70711802b702cf979" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a15f5c14520b28e70711802b702cf979 = L.map(
+                "map_a15f5c14520b28e70711802b702cf979",
+                {
+                    center: [45.6669, 12.242],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e9b9967b973a74934764954314daaf30 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e9b9967b973a74934764954314daaf30.addTo(map_a15f5c14520b28e70711802b702cf979);
+        
+    
+            var feature_group_62912b39bcf5db3b8764052fcc3d64e6 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_4446a4b591421bb77b151471e7d62fba = L.marker(
+                [45.70111, 12.36806],
+                {
+}
+            ).addTo(feature_group_62912b39bcf5db3b8764052fcc3d64e6);
+        
+    
+            var icon_72cc97b19849e36e6e5307c9a86e8d60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4446a4b591421bb77b151471e7d62fba.setIcon(icon_72cc97b19849e36e6e5307c9a86e8d60);
+        
+    
+        var popup_53fea76b165afce6bfbf763e2d219f20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_218b5c92db1aaae0fb85a5b39939a00f = $(`<div id="html_218b5c92db1aaae0fb85a5b39939a00f" style="width: 100.0%; height: 100.0%;"><b>Festa a Cavriè</b><br>Una serata con DJ e drink</div>`)[0];
+                popup_53fea76b165afce6bfbf763e2d219f20.setContent(html_218b5c92db1aaae0fb85a5b39939a00f);
+            
+        
+
+        marker_4446a4b591421bb77b151471e7d62fba.bindPopup(popup_53fea76b165afce6bfbf763e2d219f20)
+        ;
+
+        
+    
+    
+            marker_4446a4b591421bb77b151471e7d62fba.bindTooltip(
+                `<div>
+                     Festa a Cavriè
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_62912b39bcf5db3b8764052fcc3d64e6.addTo(map_a15f5c14520b28e70711802b702cf979);
+        
+    
+            var feature_group_565b2ab0ce8c0cf3743077b45dbb7285 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_e18028700761aa7f0c415ad7260422ef = L.circle(
+                [45.70111, 12.36806],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(feature_group_565b2ab0ce8c0cf3743077b45dbb7285);
+        
+    
+            feature_group_565b2ab0ce8c0cf3743077b45dbb7285.addTo(map_a15f5c14520b28e70711802b702cf979);
+        
+    
+            var feature_group_5905c28f2d320e205a4cb508b3768c04 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_4a8c4bebfa93fb3c19acbbad0c64bd30 = L.circle(
+                [45.70111, 12.36806],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17000, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5905c28f2d320e205a4cb508b3768c04);
+        
+    
+            feature_group_5905c28f2d320e205a4cb508b3768c04.addTo(map_a15f5c14520b28e70711802b702cf979);
+        
+    
+            var feature_group_563c0c092af174baba5830ae7435afbf = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_33cf9e35d7bf4a916438e51f2d5af8c5 = L.circle(
+                [45.70111, 12.36806],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000, "stroke": true, "weight": 3}
+            ).addTo(feature_group_563c0c092af174baba5830ae7435afbf);
+        
+    
+            feature_group_563c0c092af174baba5830ae7435afbf.addTo(map_a15f5c14520b28e70711802b702cf979);
+        
+    
+            var feature_group_4735c109b9a4139d66fbf027701deabc = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_0930681ff59488a4c36cc77372b9d88b = L.marker(
+                [45.6708, 12.1089],
+                {
+}
+            ).addTo(feature_group_4735c109b9a4139d66fbf027701deabc);
+        
+    
+            var icon_498733b0de833eff663fb12280cb713b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0930681ff59488a4c36cc77372b9d88b.setIcon(icon_498733b0de833eff663fb12280cb713b);
+        
+    
+        var popup_cb13213f136558fd1f77696a8d6a58a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c20df158fe92eae6b431a99c23760808 = $(`<div id="html_c20df158fe92eae6b431a99c23760808" style="width: 100.0%; height: 100.0%;"><b>Festa a Istrana</b><br>Musica dal vivo e buffet</div>`)[0];
+                popup_cb13213f136558fd1f77696a8d6a58a7.setContent(html_c20df158fe92eae6b431a99c23760808);
+            
+        
+
+        marker_0930681ff59488a4c36cc77372b9d88b.bindPopup(popup_cb13213f136558fd1f77696a8d6a58a7)
+        ;
+
+        
+    
+    
+            marker_0930681ff59488a4c36cc77372b9d88b.bindTooltip(
+                `<div>
+                     Festa a Istrana
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_4735c109b9a4139d66fbf027701deabc.addTo(map_a15f5c14520b28e70711802b702cf979);
+        
+    
+            var feature_group_021d25fe2df7b37a8baa918c72463cdb = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_c6239d839dcaaaa180e8e254834e6fac = L.circle(
+                [45.6708, 12.1089],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(feature_group_021d25fe2df7b37a8baa918c72463cdb);
+        
+    
+            feature_group_021d25fe2df7b37a8baa918c72463cdb.addTo(map_a15f5c14520b28e70711802b702cf979);
+        
+    
+            var feature_group_5417867b854320d9cf4355151cfe8015 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_39f3d12e5faca096df5f549b37f5d013 = L.circle(
+                [45.6708, 12.1089],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17000, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5417867b854320d9cf4355151cfe8015);
+        
+    
+            feature_group_5417867b854320d9cf4355151cfe8015.addTo(map_a15f5c14520b28e70711802b702cf979);
+        
+    
+            var feature_group_a1e8139084c2e88aab8d534edef3b8aa = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_9abad7769a35d83567d0ffb98b4f9b86 = L.circle(
+                [45.6708, 12.1089],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a1e8139084c2e88aab8d534edef3b8aa);
+        
+    
+            feature_group_a1e8139084c2e88aab8d534edef3b8aa.addTo(map_a15f5c14520b28e70711802b702cf979);
+        
+    
+            var feature_group_643c3836a419bbef3b6408ec00c360ef = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_94cd61839aeb7e0fdfb75ecc297b7786 = L.marker(
+                [45.6913, 12.2447],
+                {
+}
+            ).addTo(feature_group_643c3836a419bbef3b6408ec00c360ef);
+        
+    
+            var icon_91e48aea5ca203d4c22795b71ab976d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_94cd61839aeb7e0fdfb75ecc297b7786.setIcon(icon_91e48aea5ca203d4c22795b71ab976d8);
+        
+    
+        var popup_127fa40f1473dceaae7d55a897716cdf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_244c8aa9ad0110a03cccd19a3b190d85 = $(`<div id="html_244c8aa9ad0110a03cccd19a3b190d85" style="width: 100.0%; height: 100.0%;"><b>Festa a Santa Maria del Rovere</b><br>Festa in piazza con luci e balli</div>`)[0];
+                popup_127fa40f1473dceaae7d55a897716cdf.setContent(html_244c8aa9ad0110a03cccd19a3b190d85);
+            
+        
+
+        marker_94cd61839aeb7e0fdfb75ecc297b7786.bindPopup(popup_127fa40f1473dceaae7d55a897716cdf)
+        ;
+
+        
+    
+    
+            marker_94cd61839aeb7e0fdfb75ecc297b7786.bindTooltip(
+                `<div>
+                     Festa a Santa Maria del Rovere
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_643c3836a419bbef3b6408ec00c360ef.addTo(map_a15f5c14520b28e70711802b702cf979);
+        
+    
+            var feature_group_2b6ee08da7472b6e71b15a7939be2475 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_380537ddee5fe6a7d807da03e2933025 = L.circle(
+                [45.6913, 12.2447],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b6ee08da7472b6e71b15a7939be2475);
+        
+    
+            feature_group_2b6ee08da7472b6e71b15a7939be2475.addTo(map_a15f5c14520b28e70711802b702cf979);
+        
+    
+            var feature_group_798778d381383817984f7991dcb28948 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_33a4d1228055eea31f2338eedacf69ea = L.circle(
+                [45.6913, 12.2447],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17000, "stroke": true, "weight": 3}
+            ).addTo(feature_group_798778d381383817984f7991dcb28948);
+        
+    
+            feature_group_798778d381383817984f7991dcb28948.addTo(map_a15f5c14520b28e70711802b702cf979);
+        
+    
+            var feature_group_8b0ad429cf629155d817ca02e0dc6b19 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_89b28c97fdd5f46748e012210b139654 = L.circle(
+                [45.6913, 12.2447],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25000, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8b0ad429cf629155d817ca02e0dc6b19);
+        
+    
+            feature_group_8b0ad429cf629155d817ca02e0dc6b19.addTo(map_a15f5c14520b28e70711802b702cf979);
+        
+    
+            var layer_control_9a7e158cd6fe0dbed11537ee6a0420a3_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e9b9967b973a74934764954314daaf30,
+                },
+                overlays :  {
+                    "Festa a Cavri\u00e8 - Marker" : feature_group_62912b39bcf5db3b8764052fcc3d64e6,
+                    "Festa a Cavri\u00e8 - Fascia 0-10 km" : feature_group_565b2ab0ce8c0cf3743077b45dbb7285,
+                    "Festa a Cavri\u00e8 - Fascia 10-17 km" : feature_group_5905c28f2d320e205a4cb508b3768c04,
+                    "Festa a Cavri\u00e8 - Fascia 17-25 km" : feature_group_563c0c092af174baba5830ae7435afbf,
+                    "Festa a Istrana - Marker" : feature_group_4735c109b9a4139d66fbf027701deabc,
+                    "Festa a Istrana - Fascia 0-10 km" : feature_group_021d25fe2df7b37a8baa918c72463cdb,
+                    "Festa a Istrana - Fascia 10-17 km" : feature_group_5417867b854320d9cf4355151cfe8015,
+                    "Festa a Istrana - Fascia 17-25 km" : feature_group_a1e8139084c2e88aab8d534edef3b8aa,
+                    "Festa a Santa Maria del Rovere - Marker" : feature_group_643c3836a419bbef3b6408ec00c360ef,
+                    "Festa a Santa Maria del Rovere - Fascia 0-10 km" : feature_group_2b6ee08da7472b6e71b15a7939be2475,
+                    "Festa a Santa Maria del Rovere - Fascia 10-17 km" : feature_group_798778d381383817984f7991dcb28948,
+                    "Festa a Santa Maria del Rovere - Fascia 17-25 km" : feature_group_8b0ad429cf629155d817ca02e0dc6b19,
+                },
+            };
+            let layer_control_9a7e158cd6fe0dbed11537ee6a0420a3 = L.control.layers(
+                layer_control_9a7e158cd6fe0dbed11537ee6a0420a3_layers.base_layers,
+                layer_control_9a7e158cd6fe0dbed11537ee6a0420a3_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_a15f5c14520b28e70711802b702cf979);
+
+        
+</script>
+</html>
