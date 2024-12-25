@@ -10,7 +10,7 @@ GET-HOME is a Python project designed to optimize a taxi transportation service 
 
 ## Use Cases
 GET-HOME is specifically tailored for managing transportation logistics during high-demand events, such as New Year's Eve. It ensures passengers reach their destinations reliably while optimizing workloads for drivers, making it an ideal solution for event-based transportation needs.
-
+![Map](mappa_feste.png)
 ## How to Use
 1. Clone the repository:
    ```bash
